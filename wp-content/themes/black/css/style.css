@@ -403,6 +403,12 @@ html {
 }
 
 @media (max-width: 768px) {
+    .elementor-column-gap-wider>.elementor-column>.elementor-element-populated {
+        padding: 10px 0 !important;
+    }
+    wider>.elementor-column>.elementor-element-populated {
+        padding: 10px 0 !important;
+    }
     .elementor-widget-video .e-hosted-video .elementor-video{
         object-fit: cover !important;
     }
