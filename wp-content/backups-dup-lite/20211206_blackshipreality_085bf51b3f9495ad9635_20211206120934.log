@@ -1,0 +1,84 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: 06.12.2021 12:09
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.4.3
+WORDPRESS:	5.8.2
+PHP INFO:	7.3.29 | SAPI: apache2handler
+SERVER:		Apache 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 4294967296 (256M default) 
+MEMORY STACK: 6MB
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported
+SQL CREATED: 20211206_blackshipreality_085bf51b3f9495ad9635_20211206120934_database.sql
+SQL FILE SIZE: 5.29MB (5542172)
+SQL FILE TIME: 2021-12-06 12:09:55
+SQL RUNTIME: 12.76 sec.
+
+********************************************************************************
+ARCHIVE (ZIP):
+********************************************************************************
+ARCHIVE DIR:  C:/OpenServer2/domains/blackship
+ARCHIVE FILE: 20211206_blackshipreality_085bf51b3f9495ad9635_20211206120934_archive.zip
+FILTERS: *OFF*
+DIRS:
+	not set
+FILES:
+	not set
+EXTS:  not set
+----------------------------------------
+COMPRESSING
+SIZE:	496MB
+STATS:	Dirs 940 | Files 9,890
+SQL ADDED: 20211206_blackshipreality_085bf51b3f9495ad9635_20211206120934_database.sql
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 10830
+    [filename] => C:\OpenServer2\domains\blackship\wp-content\backups-dup-lite\tmp\20211206_blackshipreality_085bf51b3f9495ad9635_20211206120934_archive.zip
+    [comment] => 
+)
+
+FILE ADDED TO ZIP: 10829
+COMPRESSION RESULT: '1'
+COMPRESSED SIZE: 431.4MB
+ARCHIVE RUNTIME: 47.50 sec.
+MEMORY STACK: 8MB
+building installer
+add_extra_files1
+add_extra_files2
+add_extra_files3
+add_extra_files4
+Doing archive file check
+add_extra_files5
+add_extra_files6
+add_extra_files8
+Successfully opened zip C:/OpenServer2/domains/blackship/wp-content/backups-dup-lite/tmp/20211206_blackshipreality_085bf51b3f9495ad9635_20211206120934_archive.zip
+Adding enhanced installer files to archive using ZipArchive
+Installer files added to archive
+Added to archive
+After ziparchive close when adding installer
+
+********************************************************************************
+INTEGRITY CHECKS:
+********************************************************************************
+SQL FILE: 5.29MB
+INSTALLER FILE: 64.27KB
+ARCHIVE FILE: 432.52MB 
+EXPECTED FILE/DIRECTORY COUNT: 10,830
+ACTUAL FILE/DIRECTORY COUNT: 10,829
+ARCHIVE CONSISTENCY TEST: Pass
+
+********************************************************************************
+RECORD ID:[1]
+TOTAL PROCESS RUNTIME: 63.10 sec.
+PEAK PHP MEMORY USED: 12MB
+DONE PROCESSING => 20211206_blackshipreality 06.12.2021 12:10
+
