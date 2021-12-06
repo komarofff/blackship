@@ -398,12 +398,17 @@ html {
 }
 
 @media (max-width: 768px) {
+    .elementor-widget-video .e-hosted-video .elementor-video{
+        object-fit: cover !important;
+    }
     .elementor embed, .elementor iframe, .elementor object, .elementor video{
-        min-height: 60vh;
+        min-height: 98vh !important;
+        max-height: 98vh !important;
         object-fit: cover;
     }
     .elementor-column.elementor-col-100.elementor-top-column.elementor-element.elementor-element-dc2befa.top-video-block {
-        max-height: 60vh;
+        max-height: 98vh !important;;
+        min-height: 98vh !important;;
     }
     nav.mobile-menu.mobile-menu-show >.flex-row {
         flex-direction: column;

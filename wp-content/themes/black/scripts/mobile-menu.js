@@ -72,3 +72,11 @@ window.addEventListener('resize', () => {
 
     }
 })
+
+document.addEventListener('scroll',()=>{
+    if(pageYOffset> 1){
+        document.querySelector('.header').style.cssText = 'background: #1C1C1C;'
+    }else{
+        document.querySelector('.header').style.cssText = ''
+    }
+})
