@@ -330,6 +330,11 @@ html {
 .elementor-column.elementor-col-100.elementor-top-column.elementor-element.elementor-element-dc2befa.top-video-block {
     max-height: 97vh  !important;;
 }
+.stripe{
+    width: 100vw !important;
+    height:1px;
+    background: #fff;
+}
 /* BREAKPOINTS */
 @media (min-width: 2000px) {
     .container {
