@@ -20,40 +20,36 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'black' ); ?></a>
+<body>
+<header class="header">
+    <div class="container flex-row-between">
+        <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="logo">
+        <nav class="flex-row mobile-menu">
+            <ul class="flex-row ">
+                <li><a class="text-menu text-menu-animation" href="#"><span data-text="About Us">About Us</span></a>
+                </li>
+                <li><a class="text-menu text-menu-animation" href="#"><span data-text="Advantages">Advantages</span></a>
+                </li>
+                <li><a class="text-menu text-menu-animation" href="#"><span data-text="Contact Us">Contact Us</span></a>
+                </li>
+                <li><a class="text-menu text-menu-animation" href="#"><span data-text="Location">Location</span></a>
+                </li>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$black_description = get_bloginfo( 'description', 'display' );
-			if ( $black_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $black_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+            </ul>
+            <p class="flex-row col"><span class="padding language-switcher active-switcher">EN</span><span
+                        class=" language-switcher">JPN</span></p>
+            <div class="flex-row hidden row">
+                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg" alt=""></a>
+                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt=""></a>
+                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram.svg" alt=""></a>
+            </div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'black' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+        </nav>
+        <img class="mobile-menu-switcher hidden " src="<?php echo get_template_directory_uri(); ?>/images/menu_mobile.svg" alt="mobile-menu">
+    </div>
+
+</header>
+
+
+
+
