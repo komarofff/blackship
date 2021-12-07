@@ -46,6 +46,7 @@
             <div class="flex-col hidden small-icon">
                <?php showSocialIcons();?>
             </div>
+
         </div>
     </div>
 </footer>

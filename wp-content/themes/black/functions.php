@@ -149,6 +149,7 @@ function black_scripts() {
 	wp_enqueue_script( 'black-menu', get_template_directory_uri() . '/scripts/mobile-menu.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'black-video', get_template_directory_uri() . '/scripts/video.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'black-links', get_template_directory_uri() . '/scripts/menu-links.js', array(), _S_VERSION, true );
+    //wp_enqueue_script( 'black-map', get_template_directory_uri() . '/scripts/map.js', array(), _S_VERSION, true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

@@ -8,6 +8,7 @@ function show_map(){
     global  $keyAPI;
     echo '
     <script  src="https://maps.googleapis.com/maps/api/js?key='.$keyAPI.'&callback=initMap&v=weekly"  async></script>
+
     ';
 }
 
