@@ -1,40 +1,40 @@
 
 function initMap() {
-    let lat = 47.609799
-    let lng = -122.331989
-    let div = "<h5>Paragon Real Estate Advisors</h5>600 University St, Suite 2018. </br>Seattle, WA 98101<br>T: 206 623-8880<br>F: 206 623-7435";
-    let icon_image = "http://paragon.vasterra.com/wp-content/uploads/2021/10/marker-image.png"
+    let lat = 35.649701
+    let lng = 139.720911
+    let div = "<h5>Blackship Realty Inc.</h5>Hiroo Five 602, 5-8-12 , Shibuya-ku, Tokyo <br>T: 206 623-8880<br>F: 206 623-7435";
+    let icon_image = "/wp-content/themes/black/images/map-marker.png"
 
     const center = {lat: lat, lng: lng}
 
     const map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 11,
+        zoom: 10,
         center: center
     });
-    const contentString = `<div>${div}</div>`;
-    const infowindow = new google.maps.InfoWindow({
-        content: contentString,
-    });
+    // const contentString = `<div>${div}</div>`;
+    // const infowindow = new google.maps.InfoWindow({
+    //     content: contentString,
+    // });
 
 
     const marker = new google.maps.Marker({
         position: center,
         map,
-        title: "Paragon Real Estate Advisors",
+        title: "Blackship Realty Inc.",
         icon: icon_image
     });
-    infowindow.open({
-        anchor: marker,
-        map,
-        shouldFocus: false,
-    });
-    marker.addListener("click", () => {
-        infowindow.open({
-            anchor: marker,
-            map,
-            shouldFocus: false,
-        });
-    });
+    // infowindow.open({
+    //     anchor: marker,
+    //     map,
+    //     shouldFocus: false,
+    // });
+    // marker.addListener("click", () => {
+    //     infowindow.open({
+    //         anchor: marker,
+    //         map,
+    //         shouldFocus: false,
+    //     });
+    // });
 
 
 }
