@@ -55,16 +55,20 @@
                 ?>
 
             </nav>
-            <div class="flex-col hidden">
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg" alt=""></a>
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt=""></a>
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram.svg" alt=""></a>
+            <div class="flex-col hidden small-icon">
+               <?php showSocialIcons();?>
             </div>
         </div>
     </div>
 </footer>
 
-<?php wp_footer(); ?>
+<?php
+if(is_home()){
+    show_map();
+}
+
+
+wp_footer(); ?>
 
 </body>
 </html>

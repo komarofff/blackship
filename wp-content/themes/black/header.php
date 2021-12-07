@@ -59,10 +59,8 @@
             ?>
             <p class="flex-row col"><span class="padding language-switcher active-switcher">EN</span><span
                         class=" language-switcher">JPN</span></p>
-            <div class="flex-row hidden row">
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg" alt=""></a>
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt=""></a>
-                <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/instagram.svg" alt=""></a>
+            <div class="flex-row hidden row ">
+                <?php showSocialIcons();?>
             </div>
 
         </nav>

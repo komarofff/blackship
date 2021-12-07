@@ -45,7 +45,7 @@ html {
     color: var(--text-color);
 }
 
-.h2 {
+ .h2 h2 {
     font-family: "EB Garamond";
     font-style: normal;
     font-weight: 600;
@@ -55,7 +55,7 @@ html {
     color: var(--text-color);
 }
 
-.section-name {
+.section-name h2 {
     font-family: "EB Garamond";
     font-style: normal;
     font-weight: normal;
@@ -334,6 +334,10 @@ html {
     width: 100vw !important;
     height:1px;
     background: #fff;
+}
+.small-icon a img{
+    width: 40px;
+    height: 40px;
 }
 /* BREAKPOINTS */
 @media (min-width: 2000px) {

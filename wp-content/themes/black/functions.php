@@ -183,4 +183,4 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 require_once(get_template_directory() . '/functions/config.php');
-//require_once(get_template_directory() . '/functions/functions_theme.php');
+require_once(get_template_directory() . '/functions/functions_theme.php');
