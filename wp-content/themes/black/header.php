@@ -25,16 +25,6 @@
     <div class="container flex-row-between">
         <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="logo">
         <nav class="flex-row mobile-menu">
-<!--            <ul class="flex-row ">-->
-<!--                <li><a class="text-menu text-menu-animation" href="#"><span data-text="About Us">About Us</span></a>-->
-<!--                </li>-->
-<!--                <li><a class="text-menu text-menu-animation" href="#"><span data-text="Advantages">Advantages</span></a>-->
-<!--                </li>-->
-<!--                <li><a class="text-menu text-menu-animation" href="#"><span data-text="Contact Us">Contact Us</span></a>-->
-<!--                </li>-->
-<!--                <li><a class="text-menu text-menu-animation" href="#"><span data-text="Location">Location</span></a>-->
-<!--                </li>-->
-<!--            </ul>-->
             <?php
             wp_nav_menu([
                 'theme_location' => '',

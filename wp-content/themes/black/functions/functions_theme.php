@@ -16,3 +16,8 @@ function showSocialIcons(){
 }
 
 add_shortcode('socials','showSocialIcons');
+
+function showMap(){
+    echo '<img  src="http://black.lc/wp-content/uploads/2021/12/Rectangle.png" >';
+}
+add_shortcode('showMap','showMap');

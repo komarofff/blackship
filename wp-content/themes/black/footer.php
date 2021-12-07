@@ -19,18 +19,6 @@
         </div>
         <div class=" footer-flex-row2">
             <nav>
-<!--                <ul class="footer-flex-row">-->
-<!--                    <li><a class="text-menu-footer text-menu-animation " href="#"><span-->
-<!--                                    data-text="About Us">About Us</span></a>-->
-<!--                    </li>-->
-<!--                    <li><a class="text-menu-footer text-menu-animation " href="#"><span data-text="Advantages">Advantages</span></a>-->
-<!--                    </li>-->
-<!--                    <li><a class="text-menu-footer text-menu-animation " href="#"><span data-text="Contact Us">Contact Us</span></a>-->
-<!--                    </li>-->
-<!--                    <li><a class="text-menu-footer text-menu-animation " href="#"><span-->
-<!--                                    data-text="Location">Location</span></a>-->
-<!--                    </li>-->
-<!--                </ul>-->
                 <?php
                 wp_nav_menu([
                     'theme_location' => '',
@@ -63,7 +51,7 @@
 </footer>
 
 <?php
-if(is_home()){
+if(is_front_page()){
     show_map();
 }
 
