@@ -9,7 +9,7 @@ function initMap() {
 
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 10,
-        center: center
+        center: center,
     });
     // const contentString = `<div>${div}</div>`;
     // const infowindow = new google.maps.InfoWindow({
