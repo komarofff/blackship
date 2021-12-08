@@ -363,6 +363,7 @@ html {
     margin-bottom: 25px;
     min-height: 60px;
 }
+
 /*.gm-style div[tabindex]>div:nth-child(2) {*/
 /*    background: rgba(0,0,0,0.8);*/
 /*}*/
@@ -395,7 +396,24 @@ ul.sub-menu li > a.text-menu.text-menu-animation {
 li#menu-item-9999999999 {
     margin-left: 1rem;
 }
-
+h1.elementor-heading-title.elementor-size-default {
+    position: absolute;
+    top: 50vh !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.84rem;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: var(--text-color);
+}
 
 /* BREAKPOINTS */
 @media (min-width: 2000px) {
@@ -453,8 +471,9 @@ li#menu-item-9999999999 {
         font-size: 14px;
     }
 
-    .h1 {
+    .h1,h1.elementor-heading-title.elementor-size-default {
         font-size: 48px;
+        width: 90vw;
     }
 
     .h2 {
@@ -557,8 +576,9 @@ li#menu-item-9999999999 {
         font-size: 14px;
     }
 
-    .h1 {
-        font-size: 38px;
+    .h1,h1.elementor-heading-title.elementor-size-default {
+        font-size: 42px;
+        width: 90vw;
     }
 
     .h2 {
@@ -685,8 +705,8 @@ li#menu-item-9999999999 {
         font-size: 14px;
     }
 
-    .h1 {
-        font-size: 28px;
+    .h1,h1.elementor-heading-title.elementor-size-default {
+        font-size: 42px;
     }
 
     .h2 {
