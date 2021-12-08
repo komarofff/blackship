@@ -8,16 +8,16 @@ function initMap() {
     if(document.documentElement.clientWidth>600) {
         var icon = {
             url: "/wp-content/themes/black/images/map-marker.png", // url
-            scaledSize: new google.maps.Size(400, 400), // scaled size
+            scaledSize: new google.maps.Size(280, 280), // scaled size
             origin: new google.maps.Point(0, 0), // origin
-            anchor: new google.maps.Point(200, 200) // anchor
+            anchor: new google.maps.Point(140, 140) // anchor
         };
     }else{
         var icon = {
             url: "/wp-content/themes/black/images/map-marker.png", // url
-            scaledSize: new google.maps.Size(200, 200), // scaled size
+            scaledSize: new google.maps.Size(160, 160), // scaled size
             origin: new google.maps.Point(0, 0), // origin
-            anchor: new google.maps.Point(100, 100) // anchor
+            anchor: new google.maps.Point(80, 80) // anchor
         };
     }
     const center = {lat: lat, lng: lng}

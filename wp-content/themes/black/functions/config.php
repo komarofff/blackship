@@ -13,7 +13,7 @@ function show_map(){
 }
 
 
-$linkedin_link='#';
-$instagram_link = '#';
-$facebook_link = '#';
+$linkedin_link='https://www.youtube.com/channel/UC9-HzPKJLlZwUYjnc9r9vmg/';
+$instagram_link = 'https://www.instagram.com/blackshiprealty/';
+$facebook_link = 'https://www.facebook.com/blackshiprealty';
 $post_mail = '#';
