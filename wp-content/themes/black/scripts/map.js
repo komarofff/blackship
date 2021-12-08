@@ -5,12 +5,21 @@ function initMap() {
     let lng = 139.720911
     let div = "<h5>Blackship Realty Inc.</h5>Hiroo Five 602, 5-8-12 , Shibuya-ku, Tokyo <br>T: 206 623-8880<br>F: 206 623-7435";
     let icon_image = "/wp-content/themes/black/images/map-marker.png"
-    var icon = {
-        url: "/wp-content/themes/black/images/map-marker.png", // url
-        scaledSize: new google.maps.Size(400, 400), // scaled size
-        origin: new google.maps.Point(0,0), // origin
-        anchor: new google.maps.Point(200, 200) // anchor
-    };
+    if(document.documentElement.clientWidth>600) {
+        var icon = {
+            url: "/wp-content/themes/black/images/map-marker.png", // url
+            scaledSize: new google.maps.Size(400, 400), // scaled size
+            origin: new google.maps.Point(0, 0), // origin
+            anchor: new google.maps.Point(200, 200) // anchor
+        };
+    }else{
+        var icon = {
+            url: "/wp-content/themes/black/images/map-marker.png", // url
+            scaledSize: new google.maps.Size(200, 200), // scaled size
+            origin: new google.maps.Point(0, 0), // origin
+            anchor: new google.maps.Point(100, 100) // anchor
+        };
+    }
     const center = {lat: lat, lng: lng}
 
     const map = new google.maps.Map(document.getElementById("map"), {

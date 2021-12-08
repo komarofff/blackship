@@ -5,7 +5,11 @@ document.addEventListener('DOMContentLoaded',()=> {
         val.classList.add('text-menu', 'text-menu-animation')
         let text = val.querySelector('span').innerText
         let spanTag = val.querySelector('span')
-        spanTag.dataset.text = text
+        if(document.documentElement.clientWidth>768) {
+            spanTag.dataset.text = text
+        }else{
+            spanTag.dataset.text = ' '
+        }
 
     })
 
@@ -17,7 +21,11 @@ document.addEventListener('DOMContentLoaded',()=> {
         val2.classList.add('text-menu-footer', 'text-menu-animation')
         let text2 = val2.querySelector('span').innerText
         let spanTag2 = val2.querySelector('span')
-        spanTag2.dataset.text = text2
+        if(document.documentElement.clientWidth>768) {
+            spanTag2.dataset.text = text2
+        }else{
+            spanTag2.dataset.text = ' '
+        }
 
     })
 })
@@ -43,7 +51,7 @@ jQuery(document).ready(function ($) {
 
                 }else {
                     $('html,body').animate({
-                        scrollTop: target.offset().top - 220
+                        scrollTop: target.offset().top - 150
                     }, 1000);
                 }
                     // let targMenu = document.querySelectorAll(`a[href="/${hash55}"]`)

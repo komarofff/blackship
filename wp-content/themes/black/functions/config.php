@@ -2,7 +2,7 @@
 if ( is_user_logged_in() ) {
     show_admin_bar(true);
 }
-$keyAPI = 'AIzaSyDMYrZZhMGlK5PKOMQRQMVffXnUJwgyatY';
+$keyAPI = 'AIzaSyAGqKAqgCaNscrmYSC2x6EwNnJ8UG_k3co';
 
 function show_map(){
     global  $keyAPI;
