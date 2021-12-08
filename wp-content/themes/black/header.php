@@ -47,8 +47,8 @@
                 'link_class' => 'nav-link m-2 menu-item nav-active'
             ]);
             ?>
-            <p class="flex-row col"><span class="padding language-switcher active-switcher">EN</span><span
-                        class=" language-switcher">JPN</span></p>
+<!--            <p class="flex-row col"><span class="padding language-switcher active-switcher">EN</span><span-->
+<!--                        class=" language-switcher">JPN</span></p>-->
             <div class="flex-row hidden row ">
                 <?php showSocialIcons();?>
             </div>
