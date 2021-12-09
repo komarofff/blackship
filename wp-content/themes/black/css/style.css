@@ -431,17 +431,55 @@ input.wpcf7-form-control {
     display: inline-block;
     margin: 0 0 0 0;
 }
-input.wpcf7-form-control.has-spinner.wpcf7-submit.send-button {
-    font-size: .7rem;
-    color: #fff;
+/*input.wpcf7-form-control.has-spinner.wpcf7-submit.send-button {*/
+/*    font-size: .7rem;*/
+/*    color: #fff;*/
+/*    background: none;*/
+/*    padding: 0.5rem 2rem;*/
+/*    border: 1px solid #fff;*/
+/*}*/
+/*input.wpcf7-form-control.has-spinner.wpcf7-submit.send-button:hover {*/
+/*    background: #fff;*/
+/*    color: #000;*/
+/*    border: 1px solid #fff;*/
+/*}*/
+
+
+
+.btn-0 {
+    cursor: pointer;
+    margin: 1rem 0;
+    font-size: .7rem !important;
+    width: 150px;
+    height:50px;
+    border:1px solid #fff;
+    overflow: hidden;
     background: none;
-    padding: 0.5rem 2rem;
-    border: 1px solid #fff;
+    color:#fff;
+    position: relative;
+    z-index:2;
 }
-input.wpcf7-form-control.has-spinner.wpcf7-submit.send-button:hover {
-    background: #fff;
+.btn-0::before{
+    transition: .3s linear;
+}
+.btn-0::before {
+    z-index:-1;
+    content: '';
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    transform: translateX(-100%);
+}
+
+.btn-0:hover {
     color: #000;
-    border: 1px solid #fff;
+    transition: .3s linear;
+}
+.btn-0:hover::before {
+    transform: translateX(0%);
 }
 /* BREAKPOINTS */
 @media (min-width: 2000px) {

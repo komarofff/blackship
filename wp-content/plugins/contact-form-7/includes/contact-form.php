@@ -923,6 +923,8 @@ class WPCF7_ContactForm {
 	 *
 	 * @return string Replaced form content. wpcf7_form_elements filters applied.
 	 */
+
+
 	public function form_elements() {
 		return apply_filters( 'wpcf7_form_elements',
 			$this->replace_all_form_tags()

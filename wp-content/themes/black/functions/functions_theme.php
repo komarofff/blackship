@@ -17,3 +17,22 @@ function showSocialIcons(){
 
 add_shortcode('socials','showSocialIcons');
 
+
+add_filter( 'wpcf7_form_elements', function ( $html ) {
+
+    preg_match( '~<input([^>]+)type=["\']submit["\']([^>/]+)/?>~i', $html, $match );
+
+    if( $match ){
+        $input = $match[0];
+        $attr = trim( $match[1] . $match[2] );
+
+        preg_match( '/value=["\']([^"\']+)/', $input, $mm );
+        $button_text = $mm[1];
+
+        $html = str_replace( $input, "<button $attr>$button_text</button>", $html );
+    }
+
+    return $html;
+
+} );
+
