@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded',()=> {
         val.classList.add('text-menu', 'text-menu-animation')
         let text = val.querySelector('span').innerText
         let spanTag = val.querySelector('span')
-        if(document.documentElement.clientWidth>768) {
+        if(document.documentElement.clientWidth>768) { // &&????
             spanTag.dataset.text = text
         }else{
             spanTag.dataset.text = ' '
