@@ -415,6 +415,34 @@ h1.elementor-heading-title.elementor-size-default {
     color: var(--text-color);
 }
 
+input.wpcf7-form-control {
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0.5rem 0;
+    outline: none;
+}
+.wpcf7-list-item {
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+input.wpcf7-form-control.has-spinner.wpcf7-submit.send-button {
+    font-size: .7rem;
+    color: #fff;
+    background: none;
+    padding: 0.5rem 2rem;
+    border: 1px solid #fff;
+}
+input.wpcf7-form-control.has-spinner.wpcf7-submit.send-button:hover {
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
 /* BREAKPOINTS */
 @media (min-width: 2000px) {
     .container {
