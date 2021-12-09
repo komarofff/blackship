@@ -416,6 +416,7 @@ h1.elementor-heading-title.elementor-size-default {
 }
 
 input.wpcf7-form-control {
+    width: 100%;
     background: none;
     border-top: none;
     border-left: none;
@@ -458,8 +459,17 @@ input.wpcf7-form-control {
     color:#fff;
     position: relative;
     z-index:2;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
+    transition: .3s linear;
 }
 .btn-0::before{
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
     transition: .3s linear;
 }
 .btn-0::before {
@@ -471,14 +481,26 @@ input.wpcf7-form-control {
     top: 0;
     left: 0;
     background-color: #fff;
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
 .btn-0:hover {
     color: #000;
+    -webkit-transition: .3s linear;
+    -moz-transition: .3s linear;
+    -ms-transition: .3s linear;
+    -o-transition: .3s linear;
     transition: .3s linear;
 }
 .btn-0:hover::before {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
     transform: translateX(0%);
 }
 /* BREAKPOINTS */
@@ -763,6 +785,9 @@ input.wpcf7-form-control {
 }
 
 @media (max-width: 500px) {
+    .btn-0 {
+        width: 100%;
+    }
     .logo {
         max-width: 136px;
     }
