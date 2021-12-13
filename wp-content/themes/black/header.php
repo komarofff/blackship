@@ -16,6 +16,7 @@
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="icon" href="<?php echo get_template_directory_uri();?>/images/favicon.ico" type="image/x-icon" />
     <script src='/wp-content/themes/black/scripts/map.js?ver=1.0.0' id='black-map-js'></script>
     <?php wp_head(); ?>
 </head>
@@ -23,7 +24,7 @@
 <body>
 <header class="header">
     <div class="container flex-row-between">
-        <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="logo">
+        <a href="/"> <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="logo"></a>
         <nav class="flex-row mobile-menu">
             <?php
             wp_nav_menu([

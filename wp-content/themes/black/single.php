@@ -16,7 +16,7 @@ get_header();
 ?>
 
 
-    <main>
+    <main class="container" style="margin-top:200px;">
         <?php
         while ( have_posts() ) :
             the_post();

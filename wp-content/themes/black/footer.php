@@ -55,9 +55,10 @@
 if(is_front_page()){
     show_map();
 }
-
+//$lang = WPGlobus::Config()->language;
 
 wp_footer(); ?>
+
 
 </body>
 </html>

@@ -2,12 +2,14 @@
 if ( is_user_logged_in() ) {
     show_admin_bar(true);
 }
-$keyAPI = 'KEY';
-
+$keyAPI = 'AIzaSyAGqKAqgCaNscrmYSC2x6EwNnJ8UG_k3co';
+$region_jap = "&language=ja";
+$region_english = "&language=en";
+$region_empty = "";
 function show_map(){
-    global  $keyAPI;
+    global  $keyAPI,$region_english;
     echo '
-    <script  src="https://maps.googleapis.com/maps/api/js?key='.$keyAPI.'&callback=initMap&v=weekly"  async></script>
+    <script  src="https://maps.googleapis.com/maps/api/js?key='.$keyAPI.'&callback=initMap&v=weekly'.$region_english.'"  async></script>
 
     ';
 }

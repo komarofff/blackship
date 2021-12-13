@@ -18,7 +18,7 @@ document.querySelector(".mobile-menu-switcher").addEventListener('click', (e) =>
             })
             e.target.style.cssText = ""
 
-        }, 500)
+        }, 200)
 closeMenu()
 
     } else {
@@ -45,8 +45,8 @@ closeMenu()
             setTimeout(() => {
                 document.querySelector(".mobile-menu").classList.remove('mobile-menu-show')
                 document.querySelector(".mobile-menu").style.cssText = ""
-            }, 1500)
-        }, 1000)
+            }, 600)
+        }, 300)
 
     }
 })
@@ -57,7 +57,7 @@ function closeMenu(){
             // console.log(menuTop)
             const  buttons = document.querySelectorAll(".text-menu")
 
-            console.log('buttons',buttons)
+            //console.log('buttons',buttons)
             buttons.forEach((val5)=>{
                 val5.addEventListener('click',()=>{
                     var texts = document.querySelectorAll(".text-menu > span")
@@ -82,8 +82,8 @@ function closeMenu(){
                         setTimeout(() => {
                             document.querySelector(".mobile-menu").classList.remove('mobile-menu-show')
                             document.querySelector(".mobile-menu").style.cssText = ""
-                        }, 1500)
-                    }, 1000)
+                        }, 600)
+                    }, 300)
                 })
             })
 
