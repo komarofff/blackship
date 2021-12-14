@@ -593,6 +593,17 @@ span#siteseal img {
 }
 
 @media (max-width: 768px) {
+    .office-flex {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-basis: 100%;
+        grid-gap: 10px;
+        margin-bottom: 20px;
+        min-height: 60px;
+    }
     input.wpcf7-form-control {
         margin: 1rem 0;
     }
